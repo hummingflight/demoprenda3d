@@ -3,9 +3,14 @@
 {
   'use strict';
 
-  //let hostname = window.location.hostname;
+  let hostname = window.location.hostname;
 
   let pre = "";
+
+  if(hostname === "hummingflight.github.io")
+  {
+    pre = "/demoprenda3d";
+  }
   
   requirejs.config({
     
