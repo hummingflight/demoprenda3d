@@ -1,0 +1,23 @@
+{
+  "name": "demo_prenda_3d",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hummingflight/demoprenda3d.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hummingflight/demoprenda3d/issues"
+  },
+  "homepage": "https://github.com/hummingflight/demoprenda3d#readme",
+  "dependencies": {
+    "http-server": "^0.12.3",
+    "typescript": "^4.0.3"
+  }
+}
