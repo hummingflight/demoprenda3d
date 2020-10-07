@@ -16,6 +16,9 @@
 
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- 3D Style -->
+    <link rel="stylesheet" href="css/3dStyle.css">
     
   </head>
   <body>
@@ -96,22 +99,8 @@
           <h2 class="text-uppercase"><span class="d-block">Discover</span> The Collections</h2>
         </div>
         <div class="row align-items-stretch">
-          <div class="col-lg-8">
-            <div class="product-item sm-height full-height bg-gray">
-              <a href="#" class="product-category">Women <span>25 items</span></a>
-              <img src="images/model_4.png" alt="Image" class="img-fluid">
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="product-item sm-height bg-gray mb-4">
-              <a href="#" class="product-category">Men <span>25 items</span></a>
-              <img src="images/model_5.png" alt="Image" class="img-fluid">
-            </div>
-
-            <div class="product-item sm-height bg-gray">
-              <a href="#" class="product-category">Shoes <span>25 items</span></a>
-              <img src="images/model_6.png" alt="Image" class="img-fluid">
-            </div>
+          <div class="glContainer" >
+            <canvas id="renderCanvas" touch-action="none"></canvas>            
           </div>
         </div>
       </div>
@@ -192,6 +181,12 @@
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
+
+  <!-- //// 3D VISUALIZER SCRIPTS ////-->
+
+  <script src="./core3d/dependencies/babylon/babylon.js"></script>
+  <script src="./core3d/dependencies/babylon/babylon.gui.js"></script>
+  <script data-main="./core3d/src/main" src="./core3d/dependencies/requireJS/require.js"></script>
     
   </body>
 </html>

@@ -1,0 +1,37 @@
+{
+  "compilerOptions":
+  {       
+    "outDir": "./lib/",
+
+    "rootDir": "./src/ts_src/",
+    
+    "outFile": "./lib/3d.js",
+    
+    "target": "es6",
+    
+    "module": "amd",  
+    
+    "noImplicitReturns": true,
+    
+    "noFallthroughCasesInSwitch": true,
+    
+    "removeComments": true,		
+    
+    "sourceMap": true,
+
+    "skipLibCheck": true,
+    
+    "lib" : 
+    [
+      "es5", 
+      "DOM", 
+      "ES2015.Collection", 
+      "scripthost"
+    ]
+  },
+
+  "exclude": 
+  [
+    "./dependencies/**/*"
+  ]
+}
