@@ -1,0 +1,7 @@
+# Modules
+
+/node_modules/
+
+# VS Code Debug Configuration File
+
+/.vscode/launch.json
