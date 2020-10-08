@@ -33,7 +33,7 @@ class GameStart
 
     modelConfiguration.asset_path = "core3d/src/assets/3DModels/";
 
-    modelConfiguration.model_folder = "Sneaker_SM";
+    modelConfiguration.model_folder = "Sneaker_Sm";
 
     modelConfiguration.model_name = "PB170_Sneaker_Sm";
 
