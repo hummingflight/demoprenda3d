@@ -88,7 +88,7 @@ define("gameStart", ["require", "exports", "guiConfiguration", "modelConfigurati
             let canvas = document.getElementById('renderCanvas');
             let babylon = new BABYLON.Engine(canvas, true);
             let scene = new BABYLON.Scene(babylon);
-            let camera = new BABYLON.ArcRotateCamera('Camera,', Math.PI / 2, Math.PI / 2, 2, new BABYLON.Vector3(5, 5, -5), scene);
+            let camera = new BABYLON.ArcRotateCamera('Camera,', Math.PI / 2, Math.PI / 2, 2, new BABYLON.Vector3(10, 10, -10), scene);
             camera.attachControl(canvas);
             this._m_root = new BABYLON.TransformNode("root", scene);
             camera.target = this._m_root.position;
@@ -116,9 +116,8 @@ define("gameStart", ["require", "exports", "guiConfiguration", "modelConfigurati
                 let index = 0;
                 while (index < size) {
                     self._m_model = _aMesh[index];
-                    if (!self._m_model.parent) {
-                        self._m_model.parent = self._m_root;
-                    }
+                    let boundingInfo = self._m_model.getBoundingInfo();
+                    self._m_root.position.copyFrom(boundingInfo.boundingBox.center);
                     ++index;
                 }
                 let objMaterial = self._m_model.material;

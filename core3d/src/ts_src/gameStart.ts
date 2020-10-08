@@ -93,7 +93,7 @@ class GameStart
       Math.PI / 2,
       Math.PI / 2,
       2,
-      new BABYLON.Vector3(5, 5 , -5),
+      new BABYLON.Vector3(10, 10 , -10),
       scene
     );
 
@@ -197,20 +197,24 @@ class GameStart
       function(_aMesh : BABYLON.AbstractMesh[])
       {
         // Get ship mesh from array.
-      
+ 
         let size : number = _aMesh.length;
-      
+ 
         let index : number = 0;
 
         while(index < size)
         {
+          
           self._m_model = _aMesh[index];
+          
+          let boundingInfo : BABYLON.BoundingInfo
+            = self._m_model.getBoundingInfo();
 
-          if(!self._m_model.parent)
-          {
-            self._m_model.parent = self._m_root;
-          }
-        
+          self._m_root.position.copyFrom
+          (
+            boundingInfo.boundingBox.center
+          );
+
           ++index;
         }
 
