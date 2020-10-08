@@ -67,7 +67,7 @@ define("gameStart", ["require", "exports", "guiConfiguration", "modelConfigurati
             guiConfiguration.button_style_width = 40;
             guiConfiguration.button_style_offset = 20;
             let modelConfiguration = new modelConfiguration_1.ModelConfiguration();
-            modelConfiguration.asset_path = "./core3D/src/assets/3DModels/";
+            modelConfiguration.asset_path = "core3D/src/assets/3DModels/";
             modelConfiguration.model_folder = "Sneaker_SM";
             modelConfiguration.model_name = "PB170_Sneaker_Sm";
             let styleA = new modelStyleData_1.ModelStyleData();

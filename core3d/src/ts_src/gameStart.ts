@@ -31,7 +31,7 @@ class GameStart
     let modelConfiguration : ModelConfiguration
       = new ModelConfiguration();
 
-    modelConfiguration.asset_path = "./core3D/src/assets/3DModels/";
+    modelConfiguration.asset_path = "core3D/src/assets/3DModels/";
 
     modelConfiguration.model_folder = "Sneaker_SM";
 
